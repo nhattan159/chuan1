@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xem Bài Viết Gốc</title>
+
+  <!-- 🔽 Facebook Open Graph Tags (dùng ảnh chung) -->
+  <meta property="og:title" content="Xem Bài Viết Gốc">
+  <meta property="og:description" content="Bấm để xem nội dung bài viết gốc và sản phẩm liên kết.">
+  <meta property="og:image" content="https://toiladansaigonnews.netlify.app/images/thumb.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://toiladansaigonnews.netlify.app/10.html">
+  <meta property="og:type" content="website">
+  <!-- 🔼 -->
+
+  <style>
+    body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background: #fff8f0; font-family: Arial, sans-serif; }
+    #openShopee { padding: 20px 40px; font-size: 24px; color: white; background-color: #ff6f00; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: background 0.3s ease; }
+    #openShopee:hover { background-color: #ff8c1a; }
+  </style>
+</head>
+<body>
+  <button id="openShopee">Xem Bài Viết</button>
+  <script>
+    const linkShopee = "https://s.shopee.vn/1VmBQx8Y6K";
+    const linkBaiBao = "https://vnexpress.net/thanh-tra-xay-dung-sai-sot-45-ho-nguy-co-mat-nha-4889175.html";
+
+    document.getElementById('openShopee').addEventListener('click', function() {
+      window.open(linkShopee, '_blank');
+      window.location.href = linkBaiBao;
+    });
+  </script>
+</body>
+</html>
